@@ -9,6 +9,24 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class StepDefinition {
+	
+	//
+	// Background steps
+	//
+	
+	@Given("^a precondition one$")
+	public void precondition_one() {
+		System.out.println("Background precondition one in login.feature");
+	}
+
+	@And("a precondition two$")
+	public void precondition_two() {
+		System.out.println("Background precondition two in login.feature");
+	}
+	
+	//
+	// Scenario steps
+	//
 
 	@Given("^user is on landing page$")
 	public void user_is_on_landing_page() {
