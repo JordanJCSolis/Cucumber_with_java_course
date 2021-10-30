@@ -29,13 +29,22 @@ public class StepDefinition {
 	public void user_accounts_shpuld_be_displayed() {
 		System.out.println("user accounts should be displayed");
 	}
-
-	@When("^user login into application with \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_login_into_application(String username, String password) throws Throwable {
-		System.out.println("Using parameterizing");
-		System.out.println("User: " + username);
-		System.out.println("Password: " + password);
-	}
+	
+	
+	/*
+	 * Code commented for avoid io.cucumber.core.runner.AmbiguousStepDefinitionsException:
+	 * "user login into application with "username1" and "password1"" matches more than one step definition:
+	 * 
+	 * "^user login into application with "([^"]*)" and "([^"]*)"$"
+	 * "^user login into application with (.+) and (.+)$"
+	 */
+	
+//	@When("^user login into application with \"([^\"]*)\" and \"([^\"]*)\"$")
+//	public void user_login_into_application(String username, String password) throws Throwable {
+//		System.out.println("Using parameterizing");
+//		System.out.println("User: " + username);
+//		System.out.println("Password: " + password);
+//	}
 
 	@When("^user sign up with following details$")
 	public void user_sign_up_with_following_details(DataTable data) throws Throwable {
