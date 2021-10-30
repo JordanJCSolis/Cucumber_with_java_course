@@ -6,7 +6,7 @@ Feature: Application login
   #Then homepage should be displayed
   #And user accounts should be displayed
   
-  @smokeTest
+  @smokeTest @RegressionTest
   Scenario: User1 login success
     Given user is on landing page
     When user login into application with "username1" and "password1"
