@@ -1,8 +1,8 @@
 Feature: Application login
 
-  Background: 
-    Given a precondition one
-    And a precondition two
+  #Background: 
+    #Given a precondition one
+    #And a precondition two
 
   #Scenario: Homepage default login
   #Given user is on landing page
