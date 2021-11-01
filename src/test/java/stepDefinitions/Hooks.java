@@ -6,7 +6,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.BeforeStep;
 
 public class Hooks {
-	
+
 	//
 	// @Before & @After annotations
 	//
@@ -30,7 +30,12 @@ public class Hooks {
 	public void conditionalAfter() {
 		System.out.println("Conditional after hook for @SanityTest tag");
 	}
-	
+
+	@Before("@E2E")
+	public void conditionalBeforee2e() {
+		System.out.println("Conditional before hook for @E2E tag");
+	}
+
 	//
 	// @BeforeStep & @AfterStep annotations
 	//
