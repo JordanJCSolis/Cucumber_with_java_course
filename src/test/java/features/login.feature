@@ -10,14 +10,14 @@ Feature: Application login
   #Then homepage should be displayed
   #And user accounts should be displayed
   
-  @smokeTest @RegressionTest
+  @smokeTest @RegressionTest @E2E
   Scenario: User1 login success
     Given user is on landing page
     When user login into application with "username1" and "password1"
     Then homepage should be displayed
     And user accounts should be displayed
 
-  @SanityTest @E2E
+  @SanityTest
   Scenario: User2 login success
     Given user is on landing page
     When user login into application with "username2" and "password2"
